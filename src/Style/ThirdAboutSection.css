@@ -1,0 +1,178 @@
+body {
+    margin: 0;
+    overflow-x: hidden;
+  }
+ 
+  .about-block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    gap: 0;
+  }
+  
+  .about-block.reverse {
+    flex-direction: row-reverse;
+  }
+  
+  .about-text,
+  .about-image {
+    flex: 1 1 50%;
+    min-width: 300px;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .dark-bg {
+    background-color: #02003b;
+    color: white;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .light-bg {
+    background-color: #fff5eb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .about-image{
+    padding: 10% 0;
+  }
+  .about-image img {
+    width: 60%;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    align-self: baseline;
+    
+  }
+  
+  
+  .about-text {
+    padding: 5% 2%;
+  }
+  
+  .about-text h2 {
+    margin: 2% 0;
+    font-size: 100px;
+    font-weight: 100;
+  }
+  
+  .about-text p {
+    font-size: 25pt;
+    font-weight: lighter;
+  }
+
+.thirdtitle {
+  padding: 6% 0% 4%;  
+  width: fit-content;
+}
+
+.thirdtitle h2 {
+  font-size: 70pt;
+  font-weight: 300;
+  color: #ffffff;
+  position: relative;
+  display: inline-block;
+  margin: 0;
+  z-index: 1;
+}
+.thirdtitle  .decor5 {
+    position: absolute;
+    position: absolute;
+    left: 84%;
+    top: -20px;
+    width: 39%;
+    height: auto;
+  }
+  
+ .thirdtitle .decor6 {
+    position: absolute;
+    right: -20%;
+    top: -4px;
+    width: 32%;
+    height: auto;
+  }
+  .missiontext{
+    padding-bottom: 0;
+    line-height: 1.3;
+  }
+  .missionimage img{
+    width: 45%;
+  }
+  /* Responsive: tablet */
+  @media (max-width: 1120px) {
+    .about-text h2 {
+        font-size: 56px;
+      }
+    
+      .about-text p {
+          font-size: 17pt;
+          width: 80%;
+      }
+  }
+  @media (max-width: 992px) {
+    .about-block,
+    .about-block.reverse {
+      flex-direction: column;
+    }
+  
+    .about-text h2 {
+      font-size: 76px;
+    }
+  
+    .about-text p {
+        font-size: 23pt;
+        width: 80%;
+    }
+    .about-section3 {
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+    }
+    .thirdtitle {
+      padding: 6% 0% 4%;  
+    }
+    .missiontext {
+      padding-bottom: 8%;
+   }
+   .about-image {
+    padding: 10% 0;
+    padding-bottom: 26%;
+}
+  }
+  
+  /* Responsive: small screens */
+  @media (max-width: 768px) {
+    .about-text h2 {
+      font-size: 45px;
+    }
+  
+    .about-text p {
+      font-size: 16pt;
+    }
+    .about-section3 {
+        gap: 20px;
+    }
+    .about-image {
+      padding: 10% 0;
+      padding-top: 11%;
+      padding-bottom: 17%;
+  }
+  }
+  
+  /* Responsive: very small screens (phones) */
+  @media (max-width: 480px) {
+    .about-text h2 {
+      font-size: 32px;
+    }
+  
+    .about-text p {
+      font-size: 14pt;
+    }
+    .about-section3 {
+        gap: 0;
+    }
+  }
+  

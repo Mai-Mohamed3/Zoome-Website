@@ -1,0 +1,191 @@
+.Service-container{
+    position: relative;
+    background-image: url('/Images/Services/First Section Background.png'); 
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    padding: 0;
+    color: white;
+  }
+  .Service-Section{
+    width: 100%;
+  }
+.text-Service{
+    position: relative;
+    top: 36%;
+}
+.text-Service h1 {
+    font-size: 70pt;
+    font-weight: 300;
+    color: #272661;
+    position: relative;
+    display: inline-block;
+    margin: 0;
+    z-index: 1;
+  }
+  
+  .text-Service p {
+    font-size: 25pt;
+    color: #272661;
+    font-weight: 300;
+    padding: 0 8%;
+    padding-top: 2%;
+    padding-left: 10%;
+  }
+
+.ServiceTitle {
+    padding: 2% 9% 0%;
+    width: 25%;
+}
+
+.ServiceTitle h2 {
+  font-size: 70pt;
+  font-weight: 300;
+  color: #ffffff;
+  position: relative;
+  display: inline-block;
+  margin: 0;
+  z-index: 1;
+}
+.ServiceTitle  .decor7 {
+    position: absolute;
+    left: 95%;
+    top: 0px;
+    width: 70%;
+    height: auto;
+  }
+
+/* Desktop large */
+@media (max-width: 1600px) {
+    .Service-container {
+      height: 76vh;
+      padding-bottom: 21%;
+    }
+    .text-Service {
+      top: 55%;
+    }
+    .text-Service p {
+      width: 80%;
+    }
+    .text-Service h1 {
+      font-size: 57pt;
+    }
+  }
+  @media (max-width: 1025px) {
+    .Service-container {
+      height: 110vh;
+    }
+    
+  }
+  
+
+  @media (min-width: 810px) and (max-width: 830px) and (orientation: portrait) {
+    .Service-container {
+      min-height: 85vh;
+    }
+  
+    .text-Service h1 {
+      font-size: 40pt;
+    }
+  
+    .text-Service p {
+      font-size: 16pt;
+    }
+  }
+  @media (min-width: 1250px) and (max-width: 1280px) {
+    .Service-container {
+        min-height: fit-content;
+        padding-bottom: 21%;
+    }
+    .text-Service h1 {
+      font-size: 55pt;
+    }
+  
+    .text-Service p {
+      font-size: 20pt;
+    }
+  }
+  
+  @media (max-width: 1400px) {
+    .text-Service h1 {
+        font-size: 40pt;
+    }
+    .text-Service p {
+      width: 60%;
+    }
+    
+}
+  
+  /* Small desktops */
+  @media (min-width: 1025px) and (max-width: 1100px) {
+    .Service-container {
+      height: 100vh;
+      padding-bottom:0;
+    }
+    .text-Service {
+      top: 40%;
+  }
+  }
+  
+  /* Tablets landscape (like iPad Air) */
+  @media (max-width: 1024px) {
+    .Service-container {
+      padding-bottom:0;
+    }
+    .text-Service {
+      top: 40%;
+  }
+    .text-Service h1 {
+      font-size: 40pt;
+    }
+    .text-Service p {
+      font-size: 18pt;
+      width: 80%;
+    }
+    .ServiceTitle .decor7 {
+      width: 66%;
+    }
+  }
+  
+  /* Tablets portrait */
+  @media (max-width: 992px) {
+    .Service-container {
+      height: 73vh;
+      padding-bottom: 7%;
+    }
+    .text-Service h1 {
+      font-size: 30pt;
+    }
+    .text-Service p {
+      font-size: 16pt;
+    }
+  }
+  
+  /* Mobile L */
+  @media (max-width: 768px) {
+    .Service-container {
+      height: 55vh;
+    }
+    .text-Service h1 {
+      font-size: 30pt;
+    }
+    .text-Service p {
+      font-size: 14pt;
+    }
+  }
+  
+  /* Mobile M & S */
+  @media (max-width: 480px) {
+    .Service-container {
+      height: 42vh;
+    }
+    .text-Service h1 {
+      font-size: 26pt;
+    }
+    .text-Service p {
+      font-size: 12pt;
+    }
+  }
+  

@@ -1,0 +1,100 @@
+.section-with-bg {
+    position: relative;
+    background-image: url('/Images/Home/Second Section Background.png'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: fit-content;
+    display: flex;
+    padding: 0;
+    padding-bottom: 3%;
+    color: white;
+  }
+  
+  .overlay-content {
+    padding: 40px;
+    border-radius: 12px;
+    max-width: 900px;
+  }
+  
+  .overlay-content h2 {
+    font-size: 57pt;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+  }
+  
+  .overlay-content p {
+    width: 70%;
+    font-size: 22pt;
+    line-height: 1.7;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+  }
+  @keyframes slideInRight {
+    from {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  /* قبل ما يظهر */
+  .overlay-content h2,
+  .overlay-content p {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  
+  /* لما يصير active */
+  .overlay-content.active h2 {
+    animation: slideInRight 0.6s forwards;
+    animation-delay: 0.2s;
+  }
+  
+  .overlay-content.active p {
+    animation: slideInRight 0.6s forwards;
+    animation-delay: 0.4s;
+  }
+  
+
+  @media (max-width: 1225px) {
+    .section-with-bg {
+      height: fit-content;
+  }
+    .overlay-content h2 {
+      font-size: 35pt;
+  }
+  .overlay-content p {
+    width: 65%;
+    font-size: 18pt;
+  }
+}
+@media (max-width: 992px) {
+  .overlay-content p {
+    width: 65%;
+    font-size: 18pt;
+  }
+}
+  @media (max-width: 772px) {
+    .section-with-bg {
+      height: fit-content;
+  }
+    .overlay-content h2 {
+      font-size: 33pt;
+  }
+  .overlay-content p {
+    width: 55%;    
+    font-size: 15pt;
+  }
+}
+  @media (max-width: 442px) {
+    .overlay-content h2 {
+      font-size: 30pt;
+  }
+  .overlay-content p {
+    width: 100%;
+    font-size: 12pt;
+  }
+  }

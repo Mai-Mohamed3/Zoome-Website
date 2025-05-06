@@ -1,0 +1,87 @@
+/* ContactCTA.css */
+.contact-cta-section {
+    background-image: url('/Images/Home/Home Page Elements-07.png');
+    background-size: cover;
+    background-position: center;
+    padding: 5% 0;
+    text-align: center;
+    color: white;
+  }
+  
+  .overlay h2 {
+    font-size: 44pt;
+    font-weight: 400;
+    margin: 0;
+    margin-bottom: 2.5%;
+    justify-self: center;
+  }
+  
+  .overlay button {
+    background-color: white;
+    color: #515151;
+    padding: 1% 2%;
+    font-size: 20pt;
+    font-weight: 400;
+    border: none;
+    border-radius:13px;
+    cursor: pointer;
+  }
+  .overlay button:hover{
+    background-color: #515151;
+    color: white;
+  }
+  /* Title Animation (slide down) */
+@keyframes slideDownHeading {
+  from {
+    transform: translateY(-60px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Button Animation (slide from left) */
+@keyframes slideFromLeftButton {
+  from {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Default hidden state */
+.overlay h2,
+.overlay button {
+  opacity: 0;
+}
+
+/* Active when visible */
+.overlay h2.active {
+  animation: slideDownHeading 0.8s forwards;
+}
+
+.overlay button.active {
+  animation: slideFromLeftButton 0.8s forwards;
+  animation-delay: 0.3s; /* شوية تأخير للزرار عشان شكله يبقى حلو */
+}
+
+  @media (max-width: 992px) {
+    .overlay h2 {
+      font-size: 35pt;
+    }
+  }
+  @media (max-width: 770px) {
+    .overlay h2 {
+      font-size: 30pt;
+    }
+  }
+  @media (max-width: 470px) {
+    .overlay h2 {
+      font-size: 25pt;
+    }
+  }

@@ -1,0 +1,133 @@
+
+.About {
+    position: relative;
+    background-image: url('/Images/About/Second Section Background.png'); 
+    background-size: 100% 100%;    
+    background-repeat: no-repeat;
+    background-position: center;
+    height: fit-content;
+    display: flex;
+    padding: 0;
+    color: white;
+    padding-bottom: 5%;
+  }
+  
+  .overlay-content2 {
+    padding: 8% 13%;
+    border-radius: 12px;
+    max-width: 900px;
+  }
+  
+  .About h2 {
+    font-size: 60pt;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+  }
+  
+  .About p {
+    width: 80%;
+    font-size: 20pt;
+    line-height: 1.5;
+    margin-top: 3%;
+    color: rgb(88, 88, 88);
+  }
+  .decor4 {
+    position: absolute;
+    right: -30%;
+    top: -50%;
+    width: 40%;
+    height: auto;
+}
+.Abouttitle{
+    padding: 9% 0;
+}
+
+.Abouttitle {
+  padding: 6% 0% 8%;  
+  width: fit-content;
+}
+
+.Abouttitle h1 {
+  font-size: 61pt;
+  font-weight: 600;
+  color: #272661;
+  position: relative;
+  display: inline-block;
+  margin: 0;
+  z-index: 1;
+}
+
+
+.Abouttitle .decor4 {
+  position: absolute;
+  right: -17%;
+  top: -62%;
+  width: 40%;
+  height: auto;
+}
+
+@media (max-width: 1400px) {
+  .Abouttitle {
+    padding: 10% 18% 8%;
+    width: fit-content;
+}
+  .overlay-content2 p {
+    width: 80%;
+    font-size: 15pt;
+    margin-top: 4%;
+  }
+  .Abouttitle h1 {
+    font-size: 50pt;
+  }
+}
+@media (max-width: 1400px) {
+  .Abouttitle {
+    padding: 10% 18% 2%;
+    width: fit-content;
+}
+  .overlay-content2 p {
+    width: 80%;
+    font-size: 17pt
+  }
+  .Abouttitle h1 {
+    font-size: 38pt;
+  }
+}
+@media (max-width: 992px) {
+  .Abouttitle {
+    padding: 10% 18% 2%;
+    width: fit-content;
+}
+  .overlay-content2 p {
+    width: 80%;
+    font-size: 13pt
+  }
+  .Abouttitle h1 {
+    font-size: 38pt;
+  }
+}
+@media (max-width: 768px) {
+  .Abouttitle {
+    padding: 10% 18% 2%;
+    width: fit-content;
+}
+  .overlay-content2 p {
+    width: 80%;
+    font-size: 11pt
+  }
+  .Abouttitle h1 {
+    font-size: 32pt;
+  }
+}
+@media (max-width: 442px) {
+  .overlay-content2 {
+    padding: 0% 7%;
+  }
+  .Abouttitle {
+    padding: 6% 0% 2%;
+  }
+  .Abouttitle h1 {
+    font-size: 25pt;
+  }
+
+}

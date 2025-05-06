@@ -1,0 +1,121 @@
+  .service-Third-section{
+    background-image: url('/Images/Services/Third Section Background.png');
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 80px 50px;
+    color: #272661;
+    position: relative;
+  }
+  h3, h2 {
+    min-height: 60px; /* تثبيت ارتفاع العنوان */
+    display: flex;
+    margin-bottom: 10px; /* مسافة بعد العنوان */
+  }
+  .service-content-wrapper {
+    max-width: 1837px;
+    justify-self: center;
+  }
+  
+  .service-heading {
+    margin-bottom: 40px;
+    position: relative;
+    display: flex;
+  }
+  
+  .service-heading h1 {
+    font-size: 60pt;
+    font-weight: 500;
+    width: 80%;
+    margin-top: 1%;
+  }
+  
+  .service-icon {
+    width: 18%;    
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+  .service-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 50px;
+    row-gap: 0;
+    padding-top: 0%;
+  }
+  
+  .servicecard {
+    background: transparent;
+  }
+  
+  .servicecard h3 {
+    font-size: 25pt;
+    margin-bottom: 10px;
+    font-weight: 600;
+    width: 100%;
+  }
+  
+  .servicecard p {
+    font-size: 19pt;
+    line-height: 1.6;
+    font-weight: 100;
+  }
+
+  p {
+    margin: 0;
+  }
+  /* Responsive */
+  @media (max-width: 992px) {
+    .service-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .service-heading h1 {
+      font-size: 46px;
+      font-weight: 600;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .service-grid {
+      grid-template-columns: 1fr;
+    }
+    .service-heading h1 {
+      font-size: 46px;
+      width: 68%;
+    }
+    .service-icon {
+      width: 25%;
+      top: -50px;
+    }
+    .servicecard h3 {
+      font-size: 28pt;
+      margin-top: 0;
+      margin-bottom: 8px;
+      font-weight: 100;
+  }
+  .service-icon {
+    width: 27%;
+    top: 40px;
+}
+.service-heading img {
+  font-family: 'Times New Roman', Times, serif;
+  width: 27%;
+}
+}
+@media (max-width: 480px) {
+  .service-heading h1 {
+    font-size: 35px;
+    font-weight: 600;
+   }
+   .servicecard h3 {
+    font-size: 27pt;
+  }
+  .servicecard p {
+    font-size: 17pt;
+  }
+  .service-heading img {
+    top: 14px;
+  }
+  }
+  

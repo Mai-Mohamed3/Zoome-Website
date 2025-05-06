@@ -1,0 +1,246 @@
+  .third-section {
+    background-image: url('/Images/Home/Third Section Background.png'); 
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    height: fit-content;
+    padding: 6% 0;
+  }
+  
+  .title {
+    position: relative;
+    left: 41%;
+    top: 20%;
+    width: fit-content;
+  }
+  
+  .title h1 {
+    font-size: 80pt;
+    font-weight: 300;
+    color: #272661;
+    position: relative;
+    display: inline-block;
+    margin: 0;
+    z-index: 1;
+  }
+  
+  .title .decor {
+    position: absolute;
+    right: -17%;
+    top: -30%;
+    width: 40%;
+    height: auto;
+  }
+  
+  .title p {
+    font-size: 23pt;
+    font-weight: 500;
+    margin-top: -2%;
+    color: #272661;
+    padding-left: 10%;
+    width: 100%;
+    position: relative;
+    z-index: 2;
+  }
+  
+  .services {
+    margin-top: 5%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    justify-items: center;
+    width: 55%;
+    position: relative;
+    left: 60%;
+    top: 14%;
+    transform: translateX(-40%); /* نستخدمه مع left عشان يتوسّط بشكل حقيقي */
+
+  }
+  
+  .service-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .service-card img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  .service-card .webicon{
+    width: 40%;
+  }
+  .service-card .printicon{
+    width: 50%;
+  }
+  .service-card .socialicon{
+    width: 70%;
+  }
+  .service-card .marketingicon {
+    width: 85%;
+}
+  .service-card p {
+    font-size: 20pt;
+    color: #1e1e6c;
+    font-weight: 600;
+  }
+  /* Animation for title (slide from top) */
+@keyframes slideDownTitle {
+  from {
+    transform: translateY(-80px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Animation for cards (slide from bottom) */
+@keyframes slideUpCard {
+  from {
+    transform: translateY(80px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Default hidden state */
+.title h1,
+.title p,
+.service-card {
+  opacity: 0;
+  transform: translateY(80px);
+}
+
+/* Active Title Animation */
+.title.active h1,
+.title.active p {
+  animation: slideDownTitle 0.7s forwards;
+}
+
+/* Active Cards Animation */
+.service-card.active {
+  animation: slideUpCard 0.7s forwards;
+}
+
+  @media (max-width: 1400px) {
+    .third-section {
+      height: fit-content;
+      padding: 4%;
+  }
+    .title p {
+      font-size: 21pt;
+    }
+    .title {
+      left: 25%;
+    }
+    .services {
+      margin-top: 11%;
+    }
+    .service-card img {
+      width: 92%;
+    }
+    .service-card .webicon , .service-card .printicon{
+      width: 45%;
+    }
+    .service-card .socialicon{
+      width: 65%;
+    }
+    .service-card .marketingicon{
+      width: 90%;
+    }
+  }
+  @media (max-width: 992px) {
+    .title {
+      left: 18%;
+    }
+    .title p {
+      font-size: 17pt;
+      padding-left: 7%;
+    }
+    .title h1 {
+      font-size: 63pt;
+    }
+    .services {
+      margin-top: 11%;
+      width: 87%;
+    }
+    .service-card img {
+      width: 80%;
+    }
+    .services {
+      left: 49%;
+  }
+  .service-card .webicon {
+    width: 40%;
+  }
+  .service-card .marketingicon {
+    width: 78%;
+}
+
+  }
+  @media (max-width: 724px) {
+    .third-section {
+      height: fit-content;
+  }
+    .title p {
+      font-size: 21pt;
+      padding-left: 0;
+    }
+    .title {
+      position: relative;
+      left: 4%;
+    }
+    .title h1 {
+      font-size: 59pt;
+    }
+    .services {
+      grid-template-columns: repeat(2, 1fr); /* عمودين */
+      width: 80%; /* أوسع شوية عشان تكون مرتاحة */
+      left: 50%;
+      transform: translateX(-50%);
+      margin: 11% 0 0;
+    }
+    .service-card img {
+      width: 100%;
+    }
+    .special-card img{
+      width: 45%;
+    }
+
+  }
+
+  @media (max-width: 470px) {
+    .title {
+      position: relative;
+      left: 0;
+      top: 20%;
+      width: fit-content;
+  }
+  .title h1 {
+    font-size: 38pt;
+    font-weight: 300;
+  }
+  .title p {
+    font-size: 16pt;
+    margin: 2% 0;
+  }
+  .services {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    width: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .service-card img {
+    width: 80%;
+  }
+  .special-card img{
+    width: 45%;
+  }
+}
