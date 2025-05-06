@@ -1,9 +1,11 @@
 import { useEffect, useRef, useState } from 'react';
+import { useNavigate } from 'react-router-dom'; // ✅
 import '../Style/FourthHomeSection.css';
 
 export default function FourthHomeSection() {
   const sectionRef = useRef(null);
   const [isVisible, setIsVisible] = useState(false);
+  const navigate = useNavigate(); // ✅
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -26,11 +28,17 @@ export default function FourthHomeSection() {
     };
   }, []);
 
+  const handleClick = () => {
+    navigate('/contact'); // ✅
+  };
+
   return (
     <div className="contact-cta-section" ref={sectionRef}>
       <div className="overlay">
         <h2 className={isVisible ? 'active' : ''}>Let’s build something great together!</h2>
-        <button className={isVisible ? 'active' : ''}>Contact Us</button>
+        <button className={isVisible ? 'active' : ''} onClick={handleClick}>
+          Contact Us
+        </button>
       </div>
     </div>
   );

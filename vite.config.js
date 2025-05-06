@@ -1,7 +1,8 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
-// https://vite.dev/config/
+// بدلي `your-repo-name` باسم الريبو بتاعك على GitHub
 export default defineConfig({
+  base: '/',
   plugins: [react()],
 })

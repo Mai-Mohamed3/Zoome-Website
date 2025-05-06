@@ -22,7 +22,7 @@ export default function Hero() {
   useEffect(() => {
     const interval = setInterval(() => {
       setSlideIndex(prev => (prev + 1) % slides.length);
-    }, 5000); // يتغير كل 5 ثواني
+    }, 5000);
 
     return () => clearInterval(interval);
   }, [slides.length]);
