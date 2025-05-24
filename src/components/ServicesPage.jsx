@@ -31,7 +31,7 @@ export default function ServicesPage() {
         <title>Our Services | Digital Marketing, Design & Branding | Zoome</title>
         <meta 
           name="description" 
-          content="Explore Zoome Advertising’s full-service offerings—digital marketing strategies, branding, graphic design, video production, and social media management tailored to your business needs." 
+          content="Explore Zoome Advertising’s full-service offerings—digital marketing strategies, branding, graphic design, video production, and social media management." 
         />
         <meta 
           name="keywords" 

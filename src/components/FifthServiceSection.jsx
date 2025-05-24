@@ -1,5 +1,5 @@
 import '../Style/ThirdServiceSection.css'; 
-import brandingicon from '/Images/Services/social-media.png';
+import markiting from '/Images/Services/promotion.png';
 
 export default function FifthServiceSection() {
   return (
@@ -7,7 +7,7 @@ export default function FifthServiceSection() {
       <div className="service-content-wrapper">
         <div className="service-heading">
           <h1>Marketing Services</h1>
-          <img src={brandingicon} alt="Service Icon" className="service-icon" />
+          <img src={markiting} alt="Service Icon" className="service-icon" />
         </div>
         <div className="service-grid">
           <div className="servicecard">

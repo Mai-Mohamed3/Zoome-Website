@@ -417,3 +417,50 @@ body, html {
         width: 90%;
     }
   }
+  .video-controls {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+.video-controls button {
+  padding: 5px 12px;
+  font-size: 14px;
+  background-color: #eee;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.video-controls button:hover {
+  background-color: #ddd;
+}
+.video-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.video-controls-overlay {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  display: flex;
+  gap: 10px;
+  z-index: 2;
+}
+
+.video-controls-overlay button {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.video-controls-overlay button:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}

@@ -14,7 +14,7 @@ const SecondContactPage = () => {
     const form = e.target;
     const formData = new FormData(form);
 
-    fetch("https://formsubmit.co/ajax/zoome.int@gmail.com", {
+    fetch("https://formsubmit.co/ajax/info@zoome-adv.com", {
       method: "POST",
       headers: { 'Accept': 'application/json' },
       body: formData,

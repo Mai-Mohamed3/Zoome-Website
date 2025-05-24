@@ -28,7 +28,7 @@ export default function AboutPage() {
         <title>About Zoome Advertising | Creative Marketing Agency Based in Egypt</title>
         <meta 
           name="description" 
-          content="Learn about Zoome Advertising, a bold creative agency helping brands grow through strategic marketing, impactful design, and powerful digital content since 2024." 
+          content="Learn about Zoome Advertising, a bold creative agency helping brands grow through strategic marketing, impactful design, powerful digital content since 2024." 
         />
         <meta 
           name="keywords" 

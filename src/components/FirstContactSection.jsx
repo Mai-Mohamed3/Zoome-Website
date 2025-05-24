@@ -102,7 +102,7 @@ export default function FirstContactPage() {
               transition={{ duration: 0.8, delay: 0.4 }}
             >
               <img src={emailIcon} alt="Email Icon" className="contact-icon" />
-              <p>zoome.int@gmail.com</p>
+              <p>info@zoome-adv.com</p>
             </motion.div>
             <motion.div 
               className="social-icons"

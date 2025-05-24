@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import '../Style/SecondHomeSection.css';
+import logo from '/Images/Home/Nav Bar Logo.png';
 
 export default function SecondHomeSection() {
   const sectionRef = useRef(null);
@@ -40,7 +41,11 @@ export default function SecondHomeSection() {
           Whether you need brand development, digital marketing campaigns, or creative design services, 
           we are here to turn your vision into reality.
         </p>
+        
       </div>
+      <div className='bottomlogo'>
+          <img src={logo} alt="logo in bottom" />
+        </div>
     </div>
   );
 }

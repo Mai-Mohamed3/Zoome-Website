@@ -30,7 +30,7 @@ export default function HomePage() {
         <title>Zoome Advertising | Creative Marketing & Digital Solutions</title>
         <meta 
           name="description" 
-          content="Discover Zoome Advertising, Egypt’s rising creative agency offering digital marketing, branding, graphic design, video production, and social media services tailored for ambitious brands." 
+          content="Discover Zoome Advertising, Egypt’s rising creative agency offering digital marketing, branding, graphic design, video production, and social media services." 
         />
         <meta 
           name="keywords" 

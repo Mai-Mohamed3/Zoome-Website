@@ -128,11 +128,13 @@ export default function FirstAboutPage() {
             animate={isInView ? "visible" : "hidden"}
           >
             <video
-              ref={videoRef}
-              width="100%"
-              playsInline
-              autoPlay
-              loop
+             ref={videoRef}
+            width="100%"
+            playsInline
+            autoPlay
+            loop
+            controls
+              
             >
               <source src={video} type="video/mp4" />
               Your browser does not support the video tag.
