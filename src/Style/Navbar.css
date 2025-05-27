@@ -11,8 +11,8 @@
     padding: 5px 0;
     z-index: 10;
   }
-  .navbar img{
-    width: 12%;
+  .navbar a img{
+    width: 60%;
     padding: 0px 60px;
   }
   .navbar ul {
