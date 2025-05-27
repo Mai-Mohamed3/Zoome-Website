@@ -37,7 +37,7 @@ const Footer = () => {
           >
             <div className="logo-wrapper">
               <img src={Zoomebg} alt="Logo Background" className="logo-bg" />
-              <img src={Zoome} alt="Zoome Logo" className="footerlogo" />
+              <a href="/"><img src={Zoome} alt="Zoome Logo" className="footerlogo" /></a>
             </div>
             <p className="description">
               Founded in 2024 and based in Egypt, Zoome Advertising is a fresh force in the world of marketing and media.

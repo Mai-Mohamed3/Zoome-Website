@@ -5,7 +5,7 @@ import secondlogo from "/Images/Home/Main Logo.png";
 export default function Navbar() {
   return (
     <div className="navbar">
-      <img src={secondlogo} alt="Logo" />
+      <a href="/"><img src={secondlogo} alt="Logo" /></a>
       <ul>
         <li>
           <NavLink to="/" className={({ isActive }) => isActive ? 'active' : ''}>
