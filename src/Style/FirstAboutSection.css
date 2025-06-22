@@ -27,7 +27,7 @@ body, html {
       justify-content: center;
       height: fit-content;
       position: relative;
-      top: 30%;
+      top: 25%;
       padding-left: 7%;
     }
     
@@ -38,6 +38,7 @@ body, html {
       position: relative;
       z-index: 2;
       text-align: center;
+      width: 85%;
     }
     
     .sidebar li  {
@@ -57,12 +58,12 @@ body, html {
     
     .sidebar li a:hover {
       color: #EC4036;
-      font-size: 45px;
+      font-size: 40px;
     }
     
     .sidebar li a.active {
       font-weight: bold;
-      font-size: 45px;
+      font-size: 40px;
       color: #EC4036;
     }
     .about-container {
@@ -167,7 +168,7 @@ body, html {
 }
 .video-column {
     align-self: center;
-    padding-top: 15%;
+    padding-top: 10%;
 }
   .video-column video {
     width: 100%;
@@ -208,6 +209,16 @@ body, html {
         font-size: 17pt;
         width: 100%;
     }
+        .Aboutright-section {
+      display: flex;
+      flex: 1;
+      padding: 0;
+      gap: 0;
+}
+.text-column{
+      top: 20%;
+      padding-left: 2%;
+    }
     .video-column {
         align-self: center;
         padding-top: 8%;
@@ -215,7 +226,7 @@ body, html {
         z-index: 1;
     }
     .video-column video {
-        width: 87%;
+        width: 90%;
     }
   }
 
@@ -227,8 +238,11 @@ body, html {
         font-size: 35pt;
     }
     .text-column p {
-        font-size: 17pt;
+        font-size: 15pt;
     }
+      .sidebar{
+    padding: 0 2rem;
+  }
   }
   @media (max-width: 920px) {
     .about-container {

@@ -39,7 +39,7 @@ export default function FourthServiceSection() {
           animate={{ opacity: sectionVisible ? 1 : 0, y: sectionVisible ? 0 : -50 }}
           transition={{ duration: 1 }}
         >
-          <h1>Video Services</h1>
+          <h2>Video Services</h2>
           <img src={brandingicon} alt="Service Icon" className="service-icon" />
         </motion.div>
 

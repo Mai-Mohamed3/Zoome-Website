@@ -18,7 +18,7 @@
   position: relative;
 }
 
-.service-heading h1 {
+.service-heading h2 {
   font-size: 60pt;
   font-weight: 500;
   width: 80%;
@@ -71,7 +71,7 @@ p {
       grid-template-columns: repeat(2, 1fr);
   }
 
-  .service-heading h1 {
+  .service-heading h2 {
       font-size: 40px;
   }
 
@@ -89,7 +89,7 @@ p {
       grid-template-columns: 1fr;
   }
 
-  .service-heading h1 {
+  .service-heading h2 {
       font-size: 40px;
       width: 68%;
   }
@@ -111,7 +111,7 @@ p {
 
 /* Adjustments for small screens (480px) */
 @media (max-width: 480px) {
-  .service-heading h1 {
+  .service-heading h2 {
       font-size: 35px;
       font-weight: 600;
   }

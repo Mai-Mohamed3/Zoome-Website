@@ -108,9 +108,7 @@ html , body{
             width: 28%;
         }
   }
-  
-  /* Responsive */
-  @media (max-width: 1300px) {
+    @media (min-width: 1200px) and (max-width: 1300px) {
     .contactcontainer{
         height: 76vh;
         padding-bottom: 15%;
@@ -124,7 +122,7 @@ html , body{
     .contact-right-section {
         flex-direction: column;
         padding-left: 19%;
-        top: -49%;
+        top: -15%;
     }
     .contactTitle {
         width: 100%;
@@ -148,6 +146,15 @@ html , body{
     }
     
   }
+    @media (min-width: 1280px) and (max-width: 1300px) {
+        .contact-right-section {
+        flex-direction: column;
+        padding-left: 19%;
+        top: -65%;
+    }
+    }
+  /* Responsive */
+
   @media (min-width: 1090px) and (max-width: 1095px) {
     .contactcontainer{
         height: 48vh;

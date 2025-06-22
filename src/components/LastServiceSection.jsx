@@ -41,7 +41,7 @@ export default function LastServiceSection() {
             animate={{ opacity: sectionVisible ? 1 : 0, y: sectionVisible ? 0 : -50 }}
             transition={{ duration: 1 }}
           >
-            <h1>Websites Developments</h1>
+            <h2>Websites Developments</h2>
             <img src={websiteIcon} alt="Service Icon" className="Service Icon " />
           </motion.div>
 
@@ -84,7 +84,7 @@ export default function LastServiceSection() {
             animate={{ opacity: sectionVisible ? 1 : 0, y: sectionVisible ? 0 : -50 }}
             transition={{ duration: 1 }}
           >
-            <h1>Printing Services</h1>
+            <h2>Printing Services</h2>
             <img src={printingIcon} alt="Printing Icon" className="Service Icon printing" />
           </motion.div>
 

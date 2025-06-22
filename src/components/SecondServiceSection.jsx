@@ -39,7 +39,7 @@ export default function SecondServiceSection() {
           animate={{ opacity: sectionVisible ? 1 : 0, y: sectionVisible ? 0 : -50 }}
           transition={{ duration: 1 }}
         >
-          <h1>Branding and Digital Designs Services</h1>
+          <h2>Branding and Digital Designs Services</h2>
           <img src={brandingicon} alt="Service Icon" className="service-icon" />
         </motion.div>
 

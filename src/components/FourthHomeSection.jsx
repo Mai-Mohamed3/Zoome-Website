@@ -31,14 +31,28 @@ export default function FourthHomeSection() {
   const handleClick = () => {
     navigate('/contact'); // ✅
   };
+  
+  const handleDownload = () => {
+    const link = document.createElement('a');
+    link.href = '/Zoome Advertising Company Profile.pdf';
+    link.download = 'Zoome Advertising Company Profile.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
 
   return (
     <div className="contact-cta-section" ref={sectionRef}>
       <div className="overlay">
         <h2 className={isVisible ? 'active' : ''}>Let’s build something great together!</h2>
-        <button className={isVisible ? 'active' : ''} onClick={handleClick}>
-          Contact Us
-        </button>
+        <div className='contact-cta-btns'>
+          <button className={isVisible ? 'active' : ''} onClick={handleClick}>
+            Contact Us
+          </button>
+          <button id='profile-btn' className={isVisible ? 'active' : ''} onClick={handleDownload}>
+            Download Profile
+          </button>
+        </div>
       </div>
     </div>
   );

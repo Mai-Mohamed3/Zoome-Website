@@ -67,7 +67,7 @@ export default function ThirdServiceSection() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7 }}
             >
-              <h1>Social Media Services</h1>
+              <h2>Social Media Services</h2>
               <img src={brandingicon} alt="Service Icon" className="service-icon" />
             </motion.div>
 

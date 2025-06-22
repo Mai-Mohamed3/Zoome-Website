@@ -1,0 +1,267 @@
+.ThirdStorySection{
+  position: relative;
+  height: fit-content;
+  background: linear-gradient(to right, #ecd9b7, #fff);
+  color: white;
+  text-align: center;
+  overflow: hidden;
+  justify-content: center;
+  padding: 2% 0;
+}
+.worked-title{
+    color: #1f1f59;
+    font-size: 55px;
+    margin: 0;
+    font-weight: 100;
+    justify-self: center;
+}
+.story-zoome-icon{
+    padding-left: 4%;
+    width: 10%;
+    justify-self: center;
+}
+.worked-description{
+    width: 50%;
+    font-size: 30px;
+    text-align: center;
+    padding-top: 1%;
+    color: #1f1f59;
+    justify-self: center;
+}
+.logos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(14%, 1fr));
+  gap: 30px;
+  justify-items: center;
+  align-items: center;
+  padding: 4%;
+}
+
+.logo-item img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.logo-item img:hover {
+  transform: scale(1.1);
+}
+/* Animation base */
+.animate-right,
+.animate-up,
+.animate-down {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeIn 0.6s ease-out forwards;
+}
+
+.animate-right {
+  transform: translateX(50px);
+  animation-name: fadeInRight;
+}
+
+.animate-down {
+  transform: translateY(-50px);
+  animation-name: fadeInDown;
+}
+
+.animate-up {
+  transform: translateY(50px);
+  animation-name: fadeInUp;
+}
+
+/* Keyframes */
+@keyframes fadeInRight {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInDown {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Delay per logo */
+.logo-item {
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.logo-item.animate-up {
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+/* Responsive */
+@media (max-width: 1400px) {
+.story-zoome-icon {
+    padding-left: 0%;
+    width: 12%;
+    justify-self: center;
+}
+  .worked-with-section {
+    padding: 50px 10px;
+  }
+
+  .worked-title {
+    font-size: 53px;
+  }
+
+  .worked-description {
+    font-size: 30px;
+    width: 84%;
+  }
+
+  .zoome-icon {
+    width: 45px;
+  }
+  .logos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15%, 1fr));
+    gap: 9px;
+  }
+}
+
+@media (max-width: 1140px) {
+.story-zoome-icon {
+    padding-left: 0%;
+    width: 15%;
+    justify-self: center;
+}
+  .worked-with-section {
+    padding: 50px 10px;
+  }
+
+  .worked-title {
+    font-size: 46px;
+  }
+
+  .worked-description {
+    font-size: 24px;
+    width: 84%;
+  }
+
+  .zoome-icon {
+    width: 45px;
+  }
+
+  .logo-item img {
+    max-width: 80px;
+  }
+  .logos-grid {
+    grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
+    gap: 8px;
+}
+  .logo-item img {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 992px) {
+  .story-zoome-icon {
+    padding-left: 0%;
+    width: 15%;
+    justify-self: center;
+}
+  .worked-with-section {
+    padding: 50px 10px;
+  }
+
+  .worked-title {
+    font-size: 46px;
+  }
+
+  .worked-description {
+    font-size: 24px;
+    width: 84%;
+  }
+
+  .zoome-icon {
+    width: 45px;
+  }
+
+  .logo-item img {
+    max-width: 80px;
+  }
+  .logos-grid {
+    grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
+    gap: 8px;
+}
+  .logo-item img {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .story-zoome-icon {
+    padding-left: 0%;
+    width: 20%;
+    justify-self: center;
+}
+  .worked-with-section {
+    padding: 50px 10px;
+  }
+
+  .worked-title {
+    font-size: 36px;
+  }
+
+  .worked-description {
+    font-size: 18px;
+    width: 95%;
+  }
+
+  .zoome-icon {
+    width: 45px;
+  }
+
+  .logo-item img {
+    max-width: 80px;
+  }
+  .logos-grid {
+    grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
+    gap: 8px;
+}
+  .logo-item img {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .story-zoome-icon {
+    padding-left: 0%;
+    width: 20%;
+    justify-self: center;
+}
+  .worked-with-section {
+    padding: 50px 10px;
+  }
+
+  .worked-title {
+    font-size: 30px;
+  }
+
+  .worked-description {
+    font-size: 17px;
+    width: 94%;
+    padding-top: 0%;
+  }
+.logos-grid {
+    grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
+    gap: 8px;
+}
+  .logo-item img {
+    max-width: 100%;
+  }
+}

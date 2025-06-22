@@ -1,7 +1,6 @@
 .navbar {
     position: fixed;
     display: flex;
-    justify-content: space-between;
     align-items: center;
     top: 0;
     left: 0;
@@ -17,13 +16,14 @@
   }
   .navbar ul {
     display: flex;
-    justify-content: space-around;
     list-style: none;
-    padding: 0 22%;
+    width: 75%;
+    padding-left: 15%;
+    justify-content: center;
   }
   
   .navbar li {
-    padding: 0 7%;
+    padding: 0 3%;
     font-size: 30px;
     font-weight: 600;
   }
@@ -32,7 +32,9 @@
     color: #272661;
     text-decoration: none;
   }
-  
+  #story{
+    padding: 0;
+  }
   .navbar li a:hover {
     color: #EC4036;
     font-size: 35px;
@@ -46,10 +48,10 @@
 
  @media (max-width: 1160px) {
   .navbar li {
-    padding: 0 5%;
+    padding: 0 2%;
   }
   .navbar ul {
-    padding: 1px 17%;
+    padding: 1px 0%;
 }
 }
   
@@ -60,11 +62,11 @@
     }
   
     .navbar ul {
-      padding: 0 20%;
+      padding: 0 3%;
     }
   
     .navbar li {
-      padding: 0 5%;
+      padding: 0 3%;
       font-size: 24px;
     }
   

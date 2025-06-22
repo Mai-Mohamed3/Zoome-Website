@@ -12,7 +12,7 @@ import logo from '/Images/Home/Second Section Logo.png';
 import logo2 from '/Images/Home/Second Section Logo.png';
 import contexticon from '/Images/Home/Titles Logo.png';
 import { AiFillHome } from 'react-icons/ai';
-import { FaInfoCircle, FaPhoneAlt, FaServicestack } from 'react-icons/fa';
+import {FaHistory, FaInfoCircle, FaPhoneAlt, FaServicestack } from 'react-icons/fa';
 
 export default function FirstContactPage() {
   const [showMobileMenu, setShowMobileMenu] = useState(false);
@@ -20,6 +20,7 @@ export default function FirstContactPage() {
   const menuItems = [
     { name: 'Home', path: '/', icon: <AiFillHome /> },
     { name: 'About', path: '/about', icon: <FaInfoCircle /> },
+    { name: 'Our Story', path: '/story', icon: <FaHistory /> },
     { name: 'Services', path: '/services', icon: <FaServicestack /> },
     { name: 'Contact', path: '/contact', icon: <FaPhoneAlt /> },
   ];

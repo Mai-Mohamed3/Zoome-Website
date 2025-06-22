@@ -6,7 +6,7 @@ export default function FifthServiceSection() {
     <section className="service-Third-section">
       <div className="service-content-wrapper">
         <div className="service-heading">
-          <h1>Marketing Services</h1>
+          <h2>Marketing Services</h2>
           <img src={markiting} alt="Service Icon" className="service-icon" />
         </div>
         <div className="service-grid">

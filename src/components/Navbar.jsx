@@ -17,6 +17,11 @@ export default function Navbar() {
             About
           </NavLink>
         </li>
+        <li id='story'>
+          <NavLink to="/story" className={({ isActive }) => isActive ? 'active' : ''}>
+            Our Story
+          </NavLink>
+        </li>
         <li>
           <NavLink to="/services" className={({ isActive }) => isActive ? 'active' : ''}>
             Services

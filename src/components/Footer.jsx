@@ -67,6 +67,11 @@ const Footer = () => {
                   </NavLink>
                 </li>
                 <li>
+                    <NavLink to="/story" className={({ isActive }) => isActive ? 'active' : ''}>
+                      Our Story
+                    </NavLink>
+                  </li>
+                <li>
                   <NavLink to="/services" className={({ isActive }) => isActive ? 'active' : ''}>
                     Services
                   </NavLink>

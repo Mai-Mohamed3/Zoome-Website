@@ -3,10 +3,10 @@ import { NavLink } from 'react-router-dom';
 import logo from '/Images/Home/Main Logo.png';
 import logo2 from '/Images/Home/Second Section Logo.png';
 import contexticon from '/Images/Home/Titles Logo.png';
-import video from '/Video/Zoome Intro Video.mp4';
+import video from '/Video/Zoome Ad - 3.mp4';
 import { useEffect, useRef, useState } from 'react';
 import { AiFillHome } from 'react-icons/ai';
-import { FaInfoCircle, FaPhoneAlt, FaServicestack } from 'react-icons/fa';
+import {FaHistory, FaInfoCircle, FaPhoneAlt, FaServicestack } from 'react-icons/fa';
 import { motion, useInView } from 'framer-motion';
 
 export default function FirstAboutPage() {
@@ -19,6 +19,7 @@ export default function FirstAboutPage() {
   const menuItems = [
     { name: 'Home', path: '/', icon: <AiFillHome /> },
     { name: 'About', path: '/about', icon: <FaInfoCircle /> },
+    { name: 'Our Story', path: '/story', icon: <FaHistory  /> },
     { name: 'Services', path: '/services', icon: <FaServicestack /> },
     { name: 'Contact', path: '/contact', icon: <FaPhoneAlt /> },
   ];

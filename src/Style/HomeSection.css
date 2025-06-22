@@ -220,6 +220,10 @@ body, html {
     background-size:contain;
     background-repeat: no-repeat;
   }
+    .sidebar{
+    padding: 0 2rem;
+    top: 15%;
+  }
 }
 @media (max-width: 1021px) {
   .hero-container {

@@ -5,6 +5,7 @@ export default function Sidebar() {
   const menuItems = [
     { name: 'Home', path: '/' },
     { name: 'About', path: '/about' },
+    { name: 'Our Story', path: '/story' },
     { name: 'Services', path: '/services' },
     { name: 'Contact', path: '/contact' },
   ];
