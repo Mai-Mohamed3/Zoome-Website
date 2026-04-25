@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://www.zoome-adv.com/sitemap.xml
+Sitemap: https://mai-mohamed3.github.io/Zoome-Website/sitemap.xml
