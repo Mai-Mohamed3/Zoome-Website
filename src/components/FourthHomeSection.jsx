@@ -1,11 +1,11 @@
 import { useEffect, useRef, useState } from 'react';
-import { useNavigate } from 'react-router-dom'; // ✅
+import { useNavigate } from 'react-router-dom';
 import '../Style/FourthHomeSection.css';
 
 export default function FourthHomeSection() {
   const sectionRef = useRef(null);
   const [isVisible, setIsVisible] = useState(false);
-  const navigate = useNavigate(); // ✅
+  const navigate = useNavigate(); 
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -29,12 +29,12 @@ export default function FourthHomeSection() {
   }, []);
 
   const handleClick = () => {
-    navigate('/contact'); // ✅
+    navigate('/contact'); 
   };
   
   const handleDownload = () => {
     const link = document.createElement('a');
-    link.href = '/Zoome Advertising Company Profile.pdf';
+    link.href = `${import.meta.env.BASE_URL}Zoome Advertising Company Profile.pdf`;
     link.download = 'Zoome Advertising Company Profile.pdf';
     document.body.appendChild(link);
     link.click();
